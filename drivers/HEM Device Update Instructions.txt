@@ -1,0 +1,27 @@
+**First remove/factory reset the device you wish to OTA update**
+
+1. Set your Z-Wave gateway into unpair mode
+2. Tap the button on the device you will be OTA updating.
+
+**To perform an OTA firmware update (this is the same for all of our devices), you'll need (1) Z-Wave USB Adapter (Z-Stick Gen5/S2, UZB1, SmartStick+, etc) and (2) windows PC. Below are the steps:**
+
+1. Unzip the .rar or .zip file attached to this email.
+2. Open up the folder and located the file with extension .ex_, rename this file to end with .exe
+3. Plug in your Z-Stick Gen5 or other Z-Wave USB Adapters that you may have (if this is the first time plugging it in, wait a minute while the drivers should be automatically installed, if not, please reach back out to me on this step).
+4. Open up the .exe file that you renamed in step 2 to open up the OTA firmware update software.
+5. To connect Z-Stick to software by selecting (Categories -&gt; Settings) on the top left side of the software.
+6. The list should populate with your Z-Stick or other Z-Wave USB Adapter and show any nodes connected to it if any. (controller at the top of the list)
+7. Click on "Add Node"
+8. Tap the button on DEVICE, which will add into your Z-Stick network as a new node. It should appear at the bottom of the node list.
+9. Click on the new node that appears and ensure that it is highlighted.
+10. First click on "Node Information" button to update the command class information (otherwise, you cannot perform the update, typically you can skip this step if you paired via OTA software from step 7.)
+11. If the DEVICE is battery powered, make sure to tap its button to have the device send a Wakeup Report to update its status.
+12. Now on the upper middle side, click on the "Firmware" Tab
+13. At the bottom, you'll see a button "Start" click on it.
+14. If the DEVICE is battery powered, make sure to tap its button now to have the device send a Wakeup Report to update its status and begin the firmware update process.
+15. The green bar should be moving slowly, and you should see a large amount of communication happening. This will take roughly 5 minutes, so take a quick coffee break.
+16. When done, a small popup will appear and say "success", go ahead and click OK.
+17. Now select "Remove Node"
+18. Then tap the button on DEVICE to factory reset it.
+19. Close the software up.
+20. Follow Steps 4 - 17 to firmware any other of the same DEVICE.
